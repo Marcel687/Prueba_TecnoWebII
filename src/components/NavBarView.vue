@@ -11,15 +11,15 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
+import { useRouter } from 'vue-router'
 
-const router = useRouter();
+const router = useRouter()
 
 const handleLogout = () => {
   // Aquí iría la lógica para limpiar el token
-  localStorage.removeItem("token");
-  router.push("/login");
-};
+  localStorage.removeItem('token')
+  router.push('/login')
+}
 </script>
 
 <style scoped>
